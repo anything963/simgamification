@@ -1,0 +1,146 @@
+body {
+    font: 20px arial, sans-serif;
+    line-height: 1.8;
+}
+
+p {font-size: 16px;}
+
+.margin {margin-bottom: 45px;}
+
+.bg-1 {
+    background-color: #1A52CC; /* Green */
+    color: #ffffff;
+}
+.bg-2 {
+    background-color: #607299; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 {
+    background-color: #FFA37A; /* White */
+    color: #555555;
+}
+.bg-4 {
+    background-color: #CC371A; /* Black Gray */
+    color: #fff;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #3AE0FF;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.navbar-brand {
+     font-weight:bold;
+    font-family: arial;
+    letter-spacing: normal;
+    font-size: 30px;
+ }
+
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+    letter-spacing: normal;
+    font-size: 18px;
+}
+
+.leveling {
+    width: 600px;
+    height: 230px;
+    padding: 10px;
+    border: 1px solid #8ea7de;
+    margin: 15px auto;
+}
+
+.panel {
+    border: 1px solid;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+
+.badges-container {
+    border-color: #607299;
+}
+
+.leaderboard-container {
+    border-color: #f4611a;
+}
+
+.checklist-container {
+    border-color: #CC371A;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.badges-container .panel-footer .btn:hover {
+    border: 1px solid #607299;
+    background-color: #fff !important;
+    color: #607299;
+}
+
+.badges-container .panel-heading {
+    color: #fff !important;
+    background-color: #607299 !important;
+}
+
+.leaderboard-container .panel-footer .btn:hover {
+    border: 1px solid #f4611a;
+    background-color: #fff !important;
+    color: #f4611a;
+}
+
+.leaderboard-container .panel-heading {
+    color: #fff !important;
+    background-color: #f4611a !important;
+}
+
+.checklist-container .panel-footer .btn:hover {
+    border: 1px solid #CC371A;
+    background-color: #fff !important;
+    color: #CC371A;
+}
+
+.checklist-container .panel-heading {
+    color: #fff !important;
+    background-color: #CC371A !important;
+}
+
+.panel-heading {
+    padding: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-body {
+    height: 300px;
+}
+.panel-footer {
+    background-color: white !important;
+}
+.panel-footer h3 {
+    font-size: 32px;
+}
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #3288cc;
+    color: #fff;
+}
