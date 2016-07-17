@@ -54,13 +54,7 @@ p {font-size: 16px;}
     font-size: 18px;
 }
 
-.leveling {
-    width: 600px;
-    height: 230px;
-    padding: 10px;
-    border: 1px solid #8ea7de;
-    margin: 15px auto;
-}
+
 
 .panel {
     border: 1px solid;
@@ -143,4 +137,80 @@ p {font-size: 16px;}
     margin: 15px 0;
     background-color: #3288cc;
     color: #fff;
+}
+
+.leveling {
+    max-width: 600px;
+    height: 230px;
+    padding: 0 10px;
+    border: 1px solid #8ea7de;
+    margin: 15px auto;
+}
+/*******Progress Bar ***********/
+.progress {
+    height: 2.5em;
+}
+
+.progress i {
+    line-height: 3em;
+    font-size:1.5em;
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+.image-wrapper {
+    height: 230px;
+    width: 90%;
+    margin: auto;
+}
+.image-container {
+    width: 125px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: -10px !important;
+}
+
+.image-container img {
+    width: 100%;
+}
+.absolute-center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.progressbar-wrapper {
+    position: relative;
+    height: 230px;
+    width: 100%;
+}
+
+.progressbar-container {
+    height: 50px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .image-container {
+        width: 125px;
+        height: 140px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: auto !important;
+    }
+
+    .image-wrapper {
+        height: 160px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .progressbar-wrapper {
+        position: relative;
+        height: 50px;
+        width: 100%;
+    }
 }
