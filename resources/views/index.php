@@ -90,7 +90,7 @@
                     <p><strong>Endless</strong> Amet</p>
                 </div>
                 <div class="panel-footer">
-                    <h4>per month</h4>
+                    <h4></h4>
                     <button class="btn btn-lg">Details</button>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                     <p><strong>Endless</strong> Amet</p>
                 </div>
                 <div class="panel-footer">
-                    <h4>per month</h4>
+                    <h4></h4>
                     <button class="btn btn-lg">Details</button>
                 </div>
             </div>
@@ -119,14 +119,16 @@
                     <h1>Checklist</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>100</strong> Lorem</p>
-                    <p><strong>50</strong> Ipsum</p>
-                    <p><strong>25</strong> Dolor</p>
-                    <p><strong>10</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
+                    <p class="striked">Goal 1 for nursing student</p>
+                    <p class="striked">Goal 2 for nursing student</p>
+                    <p class="striked">Goal 3 for nursing student</p>
+                    <p>Goal 4 for nursing student</p>
+                    <p>Goal 5 for nursing student</p>
+                    <p>Goal 6 for nursing student</p>
+                    
                 </div>
                 <div class="panel-footer">
-                    <h4>per month</h4>
+                    <h4></h4>
                     <button class="btn btn-lg">Details</button>
                 </div>
             </div>
