@@ -23,10 +23,9 @@ p {font-size: 16px;}
     background-color: #CC371A; /* Black Gray */
     color: #fff;
 }
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
+/*.container-fluid {*/
+     /*padding: 0 10px 0 10px;*/
+ /*}*/
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -122,6 +121,7 @@ p {font-size: 16px;}
 
 .panel-body {
     height: 300px;
+    overflow:auto;
 }
 .panel-footer {
     background-color: white !important;
@@ -165,12 +165,34 @@ p {font-size: 16px;}
     width: 90%;
     margin: auto;
 }
+
+.small-image-wrapper {
+    height: 45px;
+    width: 50%;
+    margin: auto;
+}
+
 .image-container {
     width: 125px;
     height: 140px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: -10px !important;
+    border: 1px solid #8ea7de;
+
+}
+
+.small-image-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: -10px !important;
+    border: 1px solid #f4611a;
+}
+
+.small-image-container img {
+    width: 100%;
 }
 
 .image-container img {
@@ -192,8 +214,21 @@ p {font-size: 16px;}
     height: 50px;
 }
 
+.progressbar-container p {
+    margin: 0;
+}
+
+@media(max-width: 410px) {
+    .navbar-brand{
+        font-size: 15px !important;
+    }
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
+    .navbar-brand{
+        font-size: 20px;
+    }
     .image-container {
         width: 125px;
         height: 140px;
@@ -208,14 +243,38 @@ p {font-size: 16px;}
         margin: auto;
     }
 
+    .small-image-container {
+        margin-right: auto !important;
+    }
+
+    .small-image-wrapper {
+        margin: auto;
+    }
+
     .progressbar-wrapper {
         position: relative;
         height: 50px;
         width: 100%;
     }
 
+    .progressbar-container p {
+        margin: -25px 0 0 0;;
+    }
+
     .panel-heading {
         padding: 8px;
+    }
+
+    .checklist-table {
+        width: 90% !important;
+    }
+
+    .checklist-table .panel-body p {
+        font-size: 16px !important;
+    }
+
+    .panel-body {
+        height: inherit;
     }
 }
 
@@ -233,4 +292,125 @@ p {font-size: 16px;}
 /*********** Checklist *********/
 .striked {
     text-decoration: line-through;
+}
+
+/********* Leaderboard - Page *********/
+/*.leaderboard-wrapper */
+.jumbotron{
+    padding: 20px 60px;
+}
+.top-five {
+    max-width: 750px;
+    /*height: 500px;*/
+    padding: 0 20px;
+    border: 1px solid #8ea7de;
+    margin: 15px auto;
+}
+
+.top-five .progress {
+    margin: 10px 0 0 0;
+}
+
+.top-five p {
+    line-height: 2.5em;
+}
+
+
+.leaderboard-image-wrapper {
+    height: 100px;
+    width: 90%;
+    margin: auto;
+}
+.leaderboard-image-container {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #8ea7de;
+    /*margin-right: -10px !important;*/
+}
+
+.leaderboard-image-container img {
+    width: 100%;
+}
+
+.top-five .progressbar-wrapper {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.top-five .progressbar-container {
+    height: 50px;
+}
+
+uib-progressbar b{
+    font-size: 16px;
+}
+
+.leaderboard-item {
+    border-bottom: 1px solid #8ea7de;
+}
+
+.leaderboard-item:last-child {
+    border-bottom: 0;
+}
+
+/**********Checklist - Page ***********/
+.checklist-table {
+    width: 70%;
+    margin: auto;
+
+}
+
+.checklist-table .panel-body p {
+    font-size: 21px;
+}
+
+/***********badges - Page *************/
+
+.badges-container .panel-body ul {
+    margin: 0;
+    padding: 0;
+}
+.badges-container .panel-body li {
+    height: inherit;
+    text-align: left;
+    letter-spacing: 0;
+    word-spacing: 0px;
+    line-height: 100%;
+}
+
+.badges-wrapper .panel-body {
+    height: inherit;
+    text-align: left;
+    letter-spacing: 0;
+    word-spacing: 0px;
+    line-height: 100%;
+}
+
+.badge-description .badge-title {
+    font-style: italic;
+    font-weight: bold;
+    /*white-space: nowrap;*/
+    margin: 0 0 0 -20px;
+}
+
+.badge-description p{
+    padding: 0;
+    margin: 0;
+}
+
+br {
+    height: 4px;
+}
+
+.panel-body .row {
+    margin-bottom: 5px;
+}
+
+.chart-wrapper {
+    width: 100%;
+    padding : 5px;
+
 }

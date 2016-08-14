@@ -15,3 +15,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/user/{id?}', 'HomeController@userDetails');
+Route::get('/badges/{id}', 'HomeController@userBadges');
+Route::get('/badges', 'HomeController@allBadges');
+Route::get('/checklist/{id}', 'HomeController@userChecklist');
+Route::get('/leaderboard', 'HomeController@leaderboard');
+Route::post('/badges/update', 'HomeController@updateBadges');
+
+Route::get('/simulations', 'SimulationsController@simulations');

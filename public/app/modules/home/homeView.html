@@ -1,0 +1,113 @@
+<div class="home-wrapper">
+
+    <!-- Level System -->
+    <div class="container">
+        <div class="leveling">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="image-wrapper">
+                        <div class="absolute-center image-container ">
+                            <img src="images/female.png" alt="nurse-image"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="progressbar-wrapper">
+                        <div class="progressbar-container absolute-center">
+                            <p>{{vm.user.title}}</p>
+                            <uib-progressbar class="progress-striped" animate="true" max="250" value="vm.progressValue" type="success">
+                                <i>
+                                    <span count-to="{{vm.countTo}}" duration=".75" count-from="{{vm.countFrom}}"></span> / 250
+                                </i>
+                            </uib-progressbar>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Container (Other gamification Section) -->
+    <div id="other-gamification" class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <div class="badges-container panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Badges</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div ng-if="!vm.notifiedBadges.length">
+                            <p>No badges.</p>
+                        </div>
+                        <div class="row" ng-repeat="item in vm.notifiedBadges">
+                            <div class="col-xs-6">
+                                <img class="img-thumbnail" ng-src="{{item.url}}" alt="{{item.title}}"/>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="badge-description">
+                                    <p class="badge-title">{{item.title}}</p>
+                                    <p class="badge-text">{{item.description}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <h4></h4>
+                        <button ui-sref="badges" class="btn btn-lg">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="leaderboard-container panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Leaderboard</h1>
+                    </div>
+                    <div class="panel-body">
+                    <div class="row" ng-repeat="item in vm.leaderboard">
+                        <div class="col-sm-3">
+                            <div class="small-image-wrapper">
+                                <div class="absolute-center small-image-container ">
+                                    <img src="images/female.png" alt="nurse-image"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <p>{{item.fname + ' ' + item.lname}}</p>
+
+                        </div>
+                    </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <h4></h4>
+                        <button ui-sref="leaderboard" class="btn btn-lg">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="checklist-container panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Checklist</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p ng-repeat="item in vm.checklist" ng-class="{striked:item.completed}">
+                            {{item.title}}
+                        </p>
+                    </div>
+                    <div class="panel-footer">
+                        <h4></h4>
+                        <button ui-sref="checklist" class="btn btn-lg">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

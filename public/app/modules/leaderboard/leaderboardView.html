@@ -1,0 +1,35 @@
+<div class="leaderboard-wrapper">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Leaderboard</h1>
+            <p>Average Performance</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="top-five">
+            <div class="">
+
+                <div ng-repeat="item in vm.leaderboard" class="row leaderboard-item">
+                    <div class="col-sm-3">
+                        <div class="leaderboard-image-wrapper">
+                            <div class="absolute-center leaderboard-image-container">
+                                <img src="images/female.png" alt="placeholder" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="progressbar-wrapper">
+                            <div class="progressbar-container absolute-center">
+                                <uib-progressbar class="progress-striped" animate="true" max="100" value="vm.progressValue[$index].avg_sim_score" type="success">
+                                    <i><span count-to="{{item.avg_sim_score}}" duration=".75"></span> %</i>
+                                </uib-progressbar>
+
+                            </div>
+                            <p>{{item.fname + ' ' + item.lname}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="checklist-wrapper">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Checklist</h1>
+            <p>My Checklist</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="checklist-table">
+                <div class="checklist-container panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Semester Tasks</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p ng-repeat="item in vm.checklist" ng-class="{striked:item.completed}">
+                            {{item.title}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
