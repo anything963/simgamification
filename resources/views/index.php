@@ -31,10 +31,10 @@
 
     <!-- FusionCharts library-->
     <script type="text/javascript" src="lib/fusion/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts.charts.js"></script>
+    <script type="text/javascript" src="lib/fusion/fusioncharts.charts.js"></script>
 
     <!-- Angular plugin -->
-    <script type="text/javascript" src="angular-fusioncharts.min.js"></script>
+    <script type="text/javascript" src="lib/fusion/angular-fusioncharts.min.js"></script>
 </head>
 <body ng-app="simgamification">
 
@@ -42,16 +42,18 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
-                <div class="navbar-header col-sm-8">
+                <div class="navbar-header col-sm-6">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" ui-sref="home">Simulation and Gamification</a>
                 </div>
-                <div class="collapse navbar-collapse col-sm-4 col-xs-4" id="myNavbar">
+                <div class="collapse navbar-collapse col-sm-6" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a ui-sref="simulations">My Simulations</a></li>
                         <li><a ui-sref="badges">Badges</a></li>
                         <li><a ui-sref="leaderboard">Leaderboard</a></li>
                         <li><a ui-sref="checklist">Checklist</a></li>

@@ -9,7 +9,8 @@
         ["ngAnimate",
             "ui.bootstrap",
             "countTo",
-            "ui.router"]);
+            "ui.router",
+            "ng-fusioncharts"]);
 
     app.config(
         [

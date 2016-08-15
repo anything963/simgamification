@@ -7,15 +7,46 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <div class="btn-group-vertical" role="group" >
-                    <button ng-repeat="item in vm.simulations" type="button" class="btn btn-default" >
-                        {{item.name + ' - ' + item.actual_start}}
+                <div class="btn-group-vertical btn-simulation" role="group" >
+                    <h3>Simulations</h3>
+                    <button ng-repeat="item in vm.simulations" type="button" class="btn btn-default" ng-click="vm.drawChart(item.simulation_id)">
+                        {{item.name}}
                     </button>
                 </div>
             </div>
             <div class="col-sm-9">
-                <div class="chart-wrapper">
+                <div ng-hide="vm.dataSource.data.length" >
+                    <h3>Select a simulation.</h3>
+                </div>
+                <div ng-show="vm.dataSource.data.length" class="chart-wrapper">
+                    <fusioncharts
+                            width= "100%"
+                            height= "400"
+                            type= "column2d"
+                            dataFormat= "json"
+                            dataSource= "{{vm.dataSource}}">
+                    </fusioncharts>
+                    <div ng-show="vm.actions" class="row">
+                        <div class="col-sm-12">
+                            <div class="action-table-wrapper">
+                                <table class="table table-striped table-bordered table-condensed">
+                                    <thead>
+                                    <tr>
+                                        <th>Action id</th>
+                                        <th>Title</th>
+                                    </tr>
+                                    <tbody>
+                                    <tr ng-repeat="action in vm.actions">
+                                        <td>{{action.sim_action_id}}</td>
+                                        <td>{{action.title}}</td>
+                                    </tr>
+                                    </tbody>
+                                    </thead>
+                                </table>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

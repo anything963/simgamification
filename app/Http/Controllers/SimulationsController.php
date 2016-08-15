@@ -17,7 +17,7 @@ class SimulationsController extends Controller {
 
         if (count($simulations) > 0 ) {
             foreach ($simulations as $simulation){
-                $actions = DB::select('select s.simulation_id, s.phase_id, s.sim_action_id, sss.title, sss.description, s.score_option_id , round(avg(ss.value),2) as avg_score, ss.affects_grade
+                $actions = DB::select('select s.simulation_id, s.phase_id, s.sim_action_id, sss.title, sss.description, s.score_option_id , round(avg(ss.value) * 25,2) as avg_score, ss.affects_grade
                     from score s 
                     join score_option ss on s.score_option_id = ss.score_option_id
                     join sim_action sss on s.sim_action_id = sss.sim_action_id
