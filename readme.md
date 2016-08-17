@@ -1,3 +1,18 @@
+# How to install
+1. Install [composer](https://getcomposer.org/download/).
+2. Install [Node Package Manager (NPM)](https://nodejs.org/en/download/).
+3. Install [bower](https://bower.io/#install-bower) (globally).
+4. Install [MySql](http://dev.mysql.com/doc/refman/5.7/en/installing.html).
+5. Clone the project in a folder with the following command in command line.
+- git clone git@bitbucket.org:shubhashrestha/gamification-in-training-nursing-students.git
+6. Go to the root of the folder and run the following commands.
+- composer install
+- npm install
+7. Create a mysql database with the script found in database folder with filename mvf_withstudents.sql.
+8. Run $php artisan serve in command line.
+9. Go to http://localhost:8000 in a browser.
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
